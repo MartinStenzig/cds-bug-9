@@ -5,5 +5,11 @@
 ##### Original Books -- Works
 GET {{server}}{{services}}/OrgBooks?$expand=texts
 
+### Original Books -- Works, only shows the text in my locale
+GET {{server}}{{services}}/OrgBooks
+
 ##### New Books -- Does NOT Work
 GET {{server}}{{services}}/Books?$expand=texts
+
+##### New Books -- Does NOT Work, shows a cartesian product of all books and all texts of all locales
+GET {{server}}{{services}}/Books

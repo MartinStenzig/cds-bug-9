@@ -1,15 +1,9 @@
 # Problem with Query Local Mixins
+I am trying to use SAP S/4 config tables and their text table and combine them into a localized CAP entity. 
 
 
-## Steps to reproduce
-1. CDS/NPM versions (cds -v)
-@sap/cds-dk (global)  9.7.2    /usr/local/lib/node_modules/@sap/cds-dk                       
-  cds.home                       /usr/local/lib/node_modules/@sap/cds-dk/node_modules/@sap/cds 
-  cds.root                       ~/cds-bug-9                                 
-  npm root -l                    ./node_modules                                                
-  npm root -g                    /usr/local/lib/node_modules                                   
-  Node.js               24.13.1  /usr/local/bin/node            
+Using mixin as outlined here (https://cap.cloud.sap/docs/cds/cql#query-local-mixins) I thought I should be able to make it work, but unfortunately I don't get the correct response. 
 
-2. `cds init`
-3. `cds add nodejs`
- 
+This repo shows in file [./test/http/admin.http](./test/http/admin.http) the differences in result.
+
+
