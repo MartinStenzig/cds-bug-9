@@ -1,0 +1,9 @@
+@server=http://localhost:4004
+@services=/odata/v4/admin
+
+
+##### Original Books -- Works
+GET {{server}}{{services}}/OrgBooks?$expand=texts
+
+##### New Books -- Does NOT Work
+GET {{server}}{{services}}/Books?$expand=texts
